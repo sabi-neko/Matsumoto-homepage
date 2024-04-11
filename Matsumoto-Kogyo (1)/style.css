@@ -1,0 +1,241 @@
+body{
+font-family: "Noto Sans JP", sans-serif;
+margin: 0;
+padding: 0;
+width: 100%;
+
+/* ホーム */
+}
+@media  screen and(min-width:481px) {
+  /* PCカルーセル設定 */
+
+
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+
+.title1 {
+  display: flex;
+  align-items: center;
+  
+}
+
+.title2 {
+  display: flex;
+}
+
+.logo {
+  padding-top: 5px ;
+}
+
+.name {
+  font-size: 32px;
+  color: #274183;
+  font-weight: bold;
+  margin: auto 0;
+}
+
+a {
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  color:#0A0A0A;
+
+}
+.carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+.carouselImg {
+  width: 100%;
+}
+#carousel-section{
+  position: relative;
+  z-index: -1;
+}
+.main-text {
+  position: absolute;
+  left:200px;
+  top: 192px;
+  width: 70%;
+  z-index: 0;
+}
+
+/* 会社案内 */
+.c-img{
+  width: 100%;
+}
+
+.c-title,
+.ac-title {
+  text-align: center;
+  font-size: 36px;
+  color: #0A0A0A;
+}
+
+/* table01 */
+
+.table01 {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 100%;
+}
+
+
+.table01 th,
+.table01 td {
+  padding: 24px 0;
+  border-bottom: 1px solid gray;
+  font-size: 24px;
+}
+
+.table01 th {
+  width: 20%;
+  text-align: left;
+  padding-left: 50px;
+  
+}
+.map {
+  margin-left: auto;
+  margin-right: auto;  
+  width: 100%;
+  z-index: 5;
+  position: relative;
+  
+}
+.map-text {
+  border: solid 1px gray;
+  position: absolute;
+  top:1906px;
+  left: 460px; 
+  z-index: 10;
+
+}
+/* お知らせ */
+.n-img {
+  width: 100%;
+}
+/* 左右に横線 */
+.title-o {
+  font-size: 20px;
+  align-items: center; /* 横線を上下中央 */
+  display: flex; /* 文字と横線を横並び */
+  justify-content: center; /* 文字を中央寄せ */
+}
+.title-o::before{
+  background-color:gray; /* 横線の色 */
+  content: "";
+  height: 3px; /* 横線の高さ */
+  width: 60px; /* 横線の長さ */
+}
+.title-o::after {
+  background-color:gray; /* 横線の色 */
+  content: "";
+  height: 3px; /* 横線の高さ */
+  width: 800px; /* 横線の長さ */
+}
+.title-o::before {
+  margin-right: 15px; /* 文字との余白 */
+}
+.title-o::after {
+  margin-left: 15px; /* 文字との余白 */
+}
+
+.news{
+  font-size: 24px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+/* 採用情報 */
+.r-img {
+  width: 100%;
+}
+/* 左右に横線 */
+.title-b {
+  font-size: 20px;
+  align-items: center; /* 横線を上下中央 */
+  display: flex; /* 文字と横線を横並び */
+  justify-content: center; /* 文字を中央寄せ */
+}
+.title-b::before{
+  background-color:gray; /* 横線の色 */
+  content: "";
+  height: 3px; /* 横線の高さ */
+  width: 60px; /* 横線の長さ */
+}
+.title-b::after {
+  background-color:gray; /* 横線の色 */
+  content: "";
+  height: 3px; /* 横線の高さ */
+  width: 800px; /* 横線の長さ */
+}
+.title-b::before {
+  margin-right: 15px; /* 文字との余白 */
+}
+.title-b::after {
+  margin-left: 15px; /* 文字との余白 */
+}
+
+/* 募集内容テーブル */
+table {
+  margin: 20px auto;
+}
+.tbl-r02 th {
+  background: gainsboro;
+  border: solid 1px #ccc;
+  color: #0A0A0A;
+  padding: 10px;
+}
+.tbl-r02 td {
+  border: solid 1px #ccc;
+  padding: 10px;
+}
+
+@media screen and (max-width: 640px) {
+  .last td:last-child {
+    border-bottom: solid 1px #ccc;
+    width: 100%;
+  }
+  .tbl-r02 {
+    width: 80%;
+  }
+  .tbl-r02 th,
+  .tbl-r02 td {
+    border-bottom: none;
+    display: block;
+    width: 100%;
+  }
+}
+
+
+.coment {
+  font-size: 18px;
+  text-align: center;
+
+}
+
+
+/* sp */
+@media only screen and (max-width:480px) {
+  .table01 th,
+  .table01 td {
+    width: 100%;
+    display: block;
+  }
+
+  .table01 th {
+    width: 100%;
+  }
+
+  .table01 td {
+    padding-top: 0;
+  }
+}
